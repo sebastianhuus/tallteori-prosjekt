@@ -1,30 +1,61 @@
-lim = 100
-list = []
+
+# lim er det siste tallet i intervallet vi undersøker
+lim = 1000
+
+# Hjelpeliste for å holde alle tallene i intervallet
+alletall = []
+
+# Bruker en hjelpevariabel for å telle.
 n = lim + 1
 
+# Legger til alle tall i intervallet
 for i in range(2, n):
-    list.append(i)
+    alletall.append(i)
 
-# primtallet
-prime = 2
+# Starter på 2, det minste primtallet
+primtall = 2
 
-# liste over alle primtall vi finner, starter med 2
-primes = [2]
+# Hjelpeliste for å holde alle primtallene våre.
+alleprimtall = [2]
 
-multiples = []
-lum = []
+def fjern_multiplum(tallListe, tall):
+    # Hjelpeliste for å holde alle tallene i n-gangen, hvor n er det nåværende primtallet.
+    multiplum = []
 
-# finner alle produkter av primtallet og legger dem i en ny liste
-for i in range(2, n):
-    multiples.append(i*prime)
+    # Lager lokal kopi av lista så vi ikke smasher den originale
+    tallListe = tallListe
 
-# fjerner primtallsproduktet fra hovedlista
-for i in range(len(multiples)):
-    if multiples[i] in list:
-        list.remove(multiples[i])
+    # Finner alle produkter av primtallet og legger dem i en ny liste
+    for i in range(2, n):
+        multiplum.append(i * tall)
+
+    # fjerner primtallsproduktet fra hovedlista
+    for i in range(len(multiplum)):
+        if multiplum[i] in alletall:
+            tallListe.remove(multiplum[i])
+
+    return tallListe
+
 
 # neste primtallet er det minste tallet som er større enn det nåværende primtallet
-for i in range(len(list)):
-    if i > prime:
-        prime = i
+def finn_neste_primtall(liste, tall):
+    for nyttTall in liste:
+        if nyttTall > tall:
+            return nyttTall
+
+
+counter = 0
+while True:
+    try:
+        alletall = fjern_multiplum(alletall, alleprimtall[counter])
+        nyttPrimtall = finn_neste_primtall(alletall, alleprimtall[counter])
+    except (ValueError, TypeError):
         break
+
+    if nyttPrimtall is None:
+        break
+
+    alleprimtall.append(nyttPrimtall)
+    counter += 1
+
+print(alleprimtall)
