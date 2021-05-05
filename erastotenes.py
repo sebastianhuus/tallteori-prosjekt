@@ -1,40 +1,32 @@
 
-# lim er det siste tallet i intervallet vi undersøker
-lim = 1000
 
-# Hjelpeliste for å holde alle tallene i intervallet
-alletall = []
+def lag_talliste(n):
+    liste = []
 
-# Bruker en hjelpevariabel for å telle.
-n = lim + 1
+    # Legger til alle tall i intervallet
+    for i in range(2, n + 1):
+        liste.append(i)
 
-# Legger til alle tall i intervallet
-for i in range(2, n):
-    alletall.append(i)
+    return liste
 
-# Starter på 2, det minste primtallet
-primtall = 2
 
-# Hjelpeliste for å holde alle primtallene våre.
-alleprimtall = [2]
-
-def fjern_multiplum(tallListe, tall):
-    # Hjelpeliste for å holde alle tallene i n-gangen, hvor n er det nåværende primtallet.
+def fjern_multiplum(tallListe, tall, n):
+    # Hjelpeliste for å holde alle tallene i "p-gangen", hvor p er det nåværende primtallet.
     multiplum = []
 
     # Lager lokal kopi av lista så vi ikke smasher den originale
-    tallListe = tallListe
+    liste = tallListe
 
     # Finner alle produkter av primtallet og legger dem i en ny liste
-    for i in range(2, n):
+    for i in range(2, n + 1):
         multiplum.append(i * tall)
 
     # fjerner primtallsproduktet fra hovedlista
     for i in range(len(multiplum)):
         if multiplum[i] in alletall:
-            tallListe.remove(multiplum[i])
+            liste.remove(multiplum[i])
 
-    return tallListe
+    return liste
 
 
 # neste primtallet er det minste tallet som er større enn det nåværende primtallet
@@ -44,10 +36,20 @@ def finn_neste_primtall(liste, tall):
             return nyttTall
 
 
-counter = 0
+# ------------main loop------------
+# lim er det siste tallet i intervallet som vi undersøker
+lim = 1000
+
+# Hjelpeliste for å holde alle tallene i intervallet
+alletall = lag_talliste(lim)
+
+# Hjelpeliste for å holde alle primtallene våre. Starter på 2
+alleprimtall = [2]
+
+counter = 0  # teller indekset av det nåværende primtallet i primtallslista
 while True:
     try:
-        alletall = fjern_multiplum(alletall, alleprimtall[counter])
+        alletall = fjern_multiplum(alletall, alleprimtall[counter], lim)
         nyttPrimtall = finn_neste_primtall(alletall, alleprimtall[counter])
     except (ValueError, TypeError):
         break
