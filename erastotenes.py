@@ -1,5 +1,5 @@
 
-
+# Denne algoritmen er modellert etter hvordan man gjør det for hånd
 def lag_talliste(n):
     liste = []
 
