@@ -1,5 +1,7 @@
+# Denne algoritmen finner primtall.
+# Algoritmen er modellert etter hvordan man gjør det for hånd
 
-# Denne algoritmen er modellert etter hvordan man gjør det for hånd
+# Funksjonen skaffer en liste over absolutt alle tall i intervallet vårt.
 def lag_talliste(n):
     liste = []
 
@@ -10,6 +12,7 @@ def lag_talliste(n):
     return liste
 
 
+# Fjerner alle multiplum av et gitt tall. Feks n=2, så tar den ut 4,6,8,10 etc.
 def fjern_multiplum(tallListe, tall, n):
     # Hjelpeliste for å holde alle tallene i "p-gangen", hvor p er det nåværende primtallet.
     multiplum = []
@@ -29,7 +32,8 @@ def fjern_multiplum(tallListe, tall, n):
     return liste
 
 
-# neste primtallet er det minste tallet som er større enn det nåværende primtallet
+# Det neste primtallet er det minste tallet som er større enn det nåværende primtallet.
+# Hvis n=2, vil det neste tallet være 3 siden vi har fjernet alle tall 2*k. Dermed blir lista [2,3,5,7,...]
 def finn_neste_primtall(liste, tall):
     for nyttTall in liste:
         if nyttTall > tall:

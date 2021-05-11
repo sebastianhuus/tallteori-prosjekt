@@ -20,11 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5cbf630-6486-4034-a946-14a8313d5211" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/euklid.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tidtest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bokstaver.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rsa-kryptering.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/erastotenes.py" beforeDir="false" afterPath="$PROJECT_DIR$/erastotenes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/euklid.py" beforeDir="false" afterPath="$PROJECT_DIR$/euklid.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lineærkomb.py" beforeDir="false" afterPath="$PROJECT_DIR$/lineærkomb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sff.py" beforeDir="false" afterPath="$PROJECT_DIR$/sff.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +59,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Python.tidtest">
+  <component name="RunManager" selected="Python.rsa-kryptering">
     <configuration name="erastotenes" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="tallteori-prosjekt" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -102,6 +104,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="rsa-kryptering" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="tallteori-prosjekt" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rsa-kryptering.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="tidtest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="tallteori-prosjekt" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -126,8 +150,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.tidtest" />
+        <item itemvalue="Python.rsa-kryptering" />
         <item itemvalue="Python.lineærkomb" />
+        <item itemvalue="Python.tidtest" />
         <item itemvalue="Python.erastotenes" />
       </list>
     </recent_temporary>
@@ -148,6 +173,7 @@
       <workItem from="1619183126607" duration="2785000" />
       <workItem from="1619505713954" duration="1657000" />
       <workItem from="1620382446716" duration="3240000" />
+      <workItem from="1620717299452" duration="2581000" />
     </task>
     <servers />
   </component>
@@ -172,25 +198,25 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="586" y="258" key="#Inspections/0.0.1920.1160@0.0.1920.1160" timestamp="1619174418897" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1620390276800">
+    <state width="1493" height="103" key="GridCell.Tab.0.bottom" timestamp="1620728633690">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1620390276800" />
+    <state width="1493" height="103" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1620728633690" />
     <state width="1877" height="315" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1619510352591" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1620390276800">
+    <state width="1493" height="103" key="GridCell.Tab.0.center" timestamp="1620728633690">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1620390276800" />
+    <state width="1493" height="103" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1620728633690" />
     <state width="1877" height="315" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1619510352591" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1620390276800">
+    <state width="1493" height="103" key="GridCell.Tab.0.left" timestamp="1620728633690">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1620390276800" />
+    <state width="1493" height="103" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1620728633690" />
     <state width="1877" height="315" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1619510352591" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1620390276800">
+    <state width="1493" height="103" key="GridCell.Tab.0.right" timestamp="1620728633690">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1620390276800" />
+    <state width="1493" height="103" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1620728633690" />
     <state width="1877" height="315" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1619510352591" />
     <state width="1877" height="388" key="GridCell.Tab.1.bottom" timestamp="1619182610158">
       <screen x="0" y="0" width="1920" height="1160" />
@@ -214,8 +240,9 @@
     <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1620383494628" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/tallteori_prosjekt$lineærkomb.coverage" NAME="lineærkomb Coverage Results" MODIFIED="1620383710313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/tallteori_prosjekt$tidtest.coverage" NAME="tidtest Coverage Results" MODIFIED="1620385195469" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/tallteori_prosjekt$lineærkomb.coverage" NAME="lineærkomb Coverage Results" MODIFIED="1620719685175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/tallteori_prosjekt$tidtest.coverage" NAME="tidtest Coverage Results" MODIFIED="1620717450099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/tallteori_prosjekt$erastotenes.coverage" NAME="erastotenes Coverage Results" MODIFIED="1619506299677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/tallteori_prosjekt$rsa_kryptering.coverage" NAME="rsa-kryptering Coverage Results" MODIFIED="1620719712923" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

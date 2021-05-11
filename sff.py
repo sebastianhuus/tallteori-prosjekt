@@ -3,7 +3,7 @@
 # det er 50-50 mellom norsk og engelsk fordi ya boi can't decide on a language
 from primtall import liste as alleprimtall
 
-
+# Finner alle primtallsfaktorene til et tall.
 def finn_faktorer(tall):
     faktorer = []
 
@@ -14,6 +14,7 @@ def finn_faktorer(tall):
     return faktorer
 
 
+# Skal plukke ut den største primtallsfaktoren til tallet.
 def finn_største_tall(liste):
     størst = 0
     for tall in liste:
@@ -22,6 +23,7 @@ def finn_største_tall(liste):
     return størst
 
 
+# Kombinerer de  to overnevnte funksjonene.
 def finn_sff(tall1, tall2=None):
     # Returnerer største faktor til ett tall som vi gir funksjonen.
     if tall2 is None:
