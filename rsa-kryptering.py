@@ -36,11 +36,22 @@ def bokstav_til_tall(bokstav):
         if storebokstaver[i] == bokstav:
             return i
 
+def krypter_bokstav(bokstav, e, n):
+    b = bokstav_til_tall(bokstav)
+    return krypter(b, e, n)
+
 
 # d*e = 1 mod (p-1)(q-1). Her må vi ha en egen algo for euklids utvidede.
 def dekrypter(e, p, q):
+    utvidet(p, q)
+
     r = e % (p-1)*(q-1)
     return r
 
+e = 3
+n = 55
 
-print(bokstav_til_tall("s"))
+b = krypter_bokstav("s", e, n)
+print(b)
+
+
