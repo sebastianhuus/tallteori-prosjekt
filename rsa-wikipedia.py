@@ -17,6 +17,6 @@ e = alleprimtall[32]
 x = 4
 d = (1 + x*phi) / e
 
-if d*e % phi  
+if d*e % phi
 
 print((n,phi,e,d))
