@@ -2,11 +2,11 @@
 # Algoritmen er modellert etter hvordan man gjør det for hånd
 
 # Funksjonen skaffer en liste over absolutt alle tall i intervallet vårt.
-def lag_talliste(n):
+def lag_talliste(start,n):
     liste = []
 
     # Legger til alle tall i intervallet
-    for i in range(2, n + 1):
+    for i in range(start, n + 1):
         liste.append(i)
 
     return liste
