@@ -13,7 +13,7 @@ def lag_talliste(n):
 
 
 # Fjerner alle multiplum av et gitt tall. Feks n=2, så tar den ut 4,6,8,10 etc.
-def fjern_multiplum(tallListe, tall, n):
+def fjern_multiplum(tallListe, tall, lim):
     # Hjelpeliste for å holde alle tallene i "p-gangen", hvor p er det nåværende primtallet.
     multiplum = []
 
@@ -21,7 +21,7 @@ def fjern_multiplum(tallListe, tall, n):
     liste = tallListe
 
     # Finner alle produkter av primtallet og legger dem i en ny liste
-    for i in range(2, n + 1):
+    for i in range(2, lim + 1):
         multiplum.append(i * tall)
 
     # fjerner primtallsproduktet fra hovedlista

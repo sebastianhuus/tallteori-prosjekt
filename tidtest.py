@@ -15,5 +15,10 @@ def test(algo):
 
     print(diff)
 
-test(euklid)
-test(finn_sff)
+    return diff
+
+
+t1 = test(euklid)
+t2 = test(finn_sff)
+
+print(t2/t1)

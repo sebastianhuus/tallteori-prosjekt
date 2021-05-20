@@ -10,3 +10,4 @@ b = alleprimtall[7]
 def algo():
     pass
 
+# nei dette krever for mange hjerneceller
