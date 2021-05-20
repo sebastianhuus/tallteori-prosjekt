@@ -21,7 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b5cbf630-6486-4034-a946-14a8313d5211" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/erastotenes.py" beforeDir="false" afterPath="$PROJECT_DIR$/erastotenes.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/oppgave.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/oppgave.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -195,7 +194,7 @@
       <workItem from="1620717299452" duration="2581000" />
       <workItem from="1620987814381" duration="3790000" />
       <workItem from="1621327309575" duration="557000" />
-      <workItem from="1621502406957" duration="1986000" />
+      <workItem from="1621502406957" duration="2685000" />
     </task>
     <servers />
   </component>
