@@ -15,8 +15,6 @@ e = alleprimtall[32]
 
 # d*e = 1 (mod phi)
 x = 4
-d = (1 + x*phi) / e
-
-if d*e % phi
+d = (1 + x*phi) % e
 
 print((n,phi,e,d))
