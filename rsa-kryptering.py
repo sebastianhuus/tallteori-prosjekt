@@ -4,7 +4,6 @@
 
 from euklid import *
 from primtall import liste as alleprimtall
-from bokstaver import småbokstaver, storebokstaver
 
 
 # SFF skal være lik 1, ellers funker dette ikke
@@ -22,19 +21,6 @@ def krypter(a,e,n):
     b = a**e % n
     return b
 
-
-def bokstav_til_tall(bokstav):
-    allebokstaver = småbokstaver + storebokstaver
-    if bokstav not in allebokstaver:
-        return None
-
-    for i in range(len(småbokstaver)):
-        if småbokstaver[i] == bokstav:
-            return i
-
-    for i in range(len(storebokstaver)):
-        if storebokstaver[i] == bokstav:
-            return i
 
 def krypter_bokstav(bokstav, e, n):
     b = bokstav_til_tall(bokstav)

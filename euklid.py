@@ -14,4 +14,3 @@ def utvidet(a,b):
     else:
         sff, s, t = utvidet(b % a, a)
         return sff, t - (b // a) * s, s
-
