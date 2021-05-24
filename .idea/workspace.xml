@@ -20,13 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5cbf630-6486-4034-a946-14a8313d5211" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ciphertext.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rsa.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/euklid.py" beforeDir="false" afterPath="$PROJECT_DIR$/euklid.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lineærkomb.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/oppgave.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/oppgave.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rsa-kryptering.py" beforeDir="false" afterPath="$PROJECT_DIR$/rsa-kryptering.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,6 +198,7 @@
       <workItem from="1621502406957" duration="2685000" />
       <workItem from="1621589592753" duration="6832000" />
       <workItem from="1621676768576" duration="10955000" />
+      <workItem from="1621872554888" duration="625000" />
     </task>
     <servers />
   </component>
